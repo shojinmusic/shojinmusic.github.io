@@ -10,18 +10,18 @@
         <title>Shojin</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
-    <body>
+    <body id="top">
         <div class="wrap">
             <nav class="site-nav" aria-label="Main">
-                <button type="button" class="site-nav-brand" aria-label="Shojin — scroll to top">
+                <a href="#top" class="site-nav-brand" aria-label="Shojin — scroll to top">
                     <img
                         class="site-nav-logo"
                         src="assets/logo.png"
-                        width="120"
-                        height="120"
+                        width="1038"
+                        height="312"
                         alt=""
                     />
-                </button>
+                </a>
                 <ul class="site-nav-list">
                     <li>
                         <a
@@ -161,7 +161,8 @@
             </footer>
         </div>
         <script>
-            document.querySelector(".site-nav-brand")?.addEventListener("click", () => {
+            document.querySelector(".site-nav-brand")?.addEventListener("click", (e) => {
+                e.preventDefault();
                 window.scrollTo({
                     top: 0,
                     behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
