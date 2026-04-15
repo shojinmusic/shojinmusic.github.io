@@ -130,6 +130,14 @@ body {
   line-height: 0;
   text-decoration: none;
   border-radius: 6px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .site-nav-brand:focus-visible {
